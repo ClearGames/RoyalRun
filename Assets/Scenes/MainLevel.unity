@@ -551,6 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689a3066fa9f92b498882b8d988be591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 787521966}
 --- !u!136 &502209514
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -640,6 +641,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4ea0ae80ff74441b381b0799a7576d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &787521966 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1014860696115371117, guid: dcbc89efbe5bd174b99e07c76bd0b6bf, type: 3}
+  m_PrefabInstance: {fileID: 805279098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &794646770
 GameObject:
   m_ObjectHideFlags: 0
