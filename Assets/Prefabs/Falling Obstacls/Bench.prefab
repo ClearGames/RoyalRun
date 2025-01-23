@@ -75,6 +75,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench
       objectReference: {fileID: 0}
+    - target: {fileID: 3607398084681497284, guid: bb9fab223b42e90478bccad9a8f50861, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5245635184240590465, guid: bb9fab223b42e90478bccad9a8f50861, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
