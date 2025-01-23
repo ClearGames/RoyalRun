@@ -8,6 +8,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] CameraController cameraController;
     [SerializeField] GameObject chunkPrefab;
     [SerializeField] Transform chunkParent;
+    [SerializeField] ScoreManager scoreManager;
 
     [Header("Level Settings")][Tooltip("The amount of chunks we start with")]
     [SerializeField] int startingChunksAmount = 12;
@@ -61,9 +62,12 @@ public class LevelGenerator : MonoBehaviour
         float spawnPositionZ = CalculateSpawnPositionZ();
 
         Vector3 chunkSpawnPos = new Vector3(transform.position.x, transform.position.y, spawnPositionZ);
-        GameObject newChunk = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent);
+        GameObject newChunkGO = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent);
 
-        chunks.Add(newChunk);
+        chunks.Add(newChunkGO);
+        Chunk newChunk = newChunkGO.GetComponent<Chunk>();
+        newChunk.Init(this, scoreManager);
+        //newChunk.Init(levelGenerator);
     }
 
     float CalculateSpawnPositionZ()
