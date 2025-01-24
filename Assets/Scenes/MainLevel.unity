@@ -893,6 +893,7 @@ GameObject:
   - component: {fileID: 828354394}
   - component: {fileID: 828354393}
   - component: {fileID: 828354396}
+  - component: {fileID: 828354397}
   - component: {fileID: 828354395}
   m_Layer: 0
   m_Name: Cinemachine Camera
@@ -1008,6 +1009,29 @@ MonoBehaviour:
     Time: 0
     Smoothing: 0
     IgnoreY: 0
+--- !u!114 &828354397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828354392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,11 +1568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 7429592090772920343, guid: eb9d3c3ab59a14a4baf63c495da771bb, type: 3}
-  - {fileID: 7513062023439169046, guid: f79ce673982a1e242a356e1876022cd9, type: 3}
-  - {fileID: 7900543639797831633, guid: 2ce602a9bf3f2214190d84f47de6f01c, type: 3}
-  - {fileID: 8506642180193170367, guid: 12a25be24c74c7a4abe398a648f4b113, type: 3}
-  obstacleSpawnTime: 1
+  - {fileID: 4402971833532762269, guid: c83e610e011e2f14094c985c4c96e580, type: 3}
+  obstacleSpawnTime: 3
   obstacleParent: {fileID: 794646771}
   spawnWidth: 4
 --- !u!4 &1226264393
