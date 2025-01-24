@@ -9,7 +9,7 @@ public class Rock : MonoBehaviour
     [SerializeField] float collisionCooldown = 1f;
     CinemachineImpulseSource cinemachineImpulseSource;
 
-    float collisionTimer = 0f;
+    float collisionTimer = 1f;
 
     private void Awake()
     {
@@ -44,6 +44,5 @@ public class Rock : MonoBehaviour
         collisionParticleSystem.transform.position = contactPoint.point;
         collisionParticleSystem.Play();
         boulderSmashAudioSource.Play();
-
     }
 }
