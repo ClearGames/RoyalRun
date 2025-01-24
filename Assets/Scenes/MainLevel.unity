@@ -1190,10 +1190,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraController: {fileID: 828354395}
-  chunkPrefab: {fileID: 558631993846352094, guid: 7115154e4d63bf7409fdb1bd5d2e006c, type: 3}
+  chunkPrefabs:
+  - {fileID: 558631993846352094, guid: 7115154e4d63bf7409fdb1bd5d2e006c, type: 3}
+  - {fileID: 4525952031947381210, guid: 09de2c9680db03f468bf280595dc4ac4, type: 3}
+  - {fileID: 4525952031947381210, guid: 7fef7ad80561a9a4a9a3093ee130f7c8, type: 3}
+  - {fileID: 4525952031947381210, guid: e2a25a63960bb244193bced213f45836, type: 3}
+  - {fileID: 558631993846352094, guid: 7115154e4d63bf7409fdb1bd5d2e006c, type: 3}
+  - {fileID: 558631993846352094, guid: 7115154e4d63bf7409fdb1bd5d2e006c, type: 3}
+  - {fileID: 558631993846352094, guid: 7115154e4d63bf7409fdb1bd5d2e006c, type: 3}
+  checkpointChunkPrefab: {fileID: 4525952031947381210, guid: e9cc3014d58e56549b11fede900c475f, type: 3}
   chunkParent: {fileID: 794646771}
   scoreManager: {fileID: 1932006947}
   startingChunksAmount: 12
+  checkpointChunkIntervale: 8
   chunkLength: 10
   moveSpeed: 8
   minMoveSpeed: 8
@@ -1249,7 +1258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &986766226
