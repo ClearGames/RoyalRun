@@ -6547,7 +6547,7 @@ MonoBehaviour:
   playerController: {fileID: 502209511}
   timeText: {fileID: 921747376}
   gameOverText: {fileID: 1509321732}
-  startTime: 5
+  startTime: 60
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
